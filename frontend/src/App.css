@@ -1,0 +1,56 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 0;
+}
+
+.app-header {
+  flex-shrink: 0;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.app-header h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.app-header p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.graph-section {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.graph-section .graph-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.graph-section .graph-wrapper canvas {
+  display: block;
+}
+
+.chat-section {
+  width: 360px;
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
