@@ -119,7 +119,7 @@ export default function ChatPanel({ onGraphFocus }) {
     } catch (err) {
       const msg =
         err.message.includes("fetch") || err.message.includes("Failed")
-          ? "Cannot reach API. Start the backend with: python main.py"
+          ? "Cannot reach API. Check that the backend is running and reachable at /api/chat."
           : err.message;
       setMessages((current) => [
         ...current,

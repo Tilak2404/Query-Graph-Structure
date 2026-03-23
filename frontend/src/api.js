@@ -1,6 +1,5 @@
-const BACKEND_ORIGIN = "http://127.0.0.1:8001";
-const API_BASE = `${BACKEND_ORIGIN}/api`;
-const CHAT_URL = `${BACKEND_ORIGIN}/chat`;
+const API_BASE = (import.meta.env.VITE_API_BASE || "/api").replace(/\/$/, "");
+const CHAT_URL = `${API_BASE}/chat`;
 const CHAT_HISTORY_WINDOW = 8;
 const CHAT_HISTORY_PREVIEW_ROWS = 3;
 const CHAT_HISTORY_PREVIEW_COLUMNS = 6;
