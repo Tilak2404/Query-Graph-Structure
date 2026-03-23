@@ -162,6 +162,11 @@ Raw JSONL files organized by entity:
 `build_graph.py` materializes:
 - `graph_nodes`: Entity records with labels and JSON metadata
 - `graph_edges`: Relationships (`HAS_ITEM`, `FULFILLS`, `REFERENCES_DELIVERY`, `CLEARS`, `SOLD_TO`, etc.)
+The tool provides interactive visualization that helps users to see how queries traverse the query graph, highlighting the active paths dynamically as users interact with the system. Users can click on different nodes to explore related data and understand links between nodes effectively.
+
+Additionally, flow highlighting gives users clear visual cues about the data flow, making it intuitive to see how data is processed through various steps in the query execution. This feature is crucial for debugging and optimizing queries, as it offers insights into how the query is structured and executed within the system.
+
+The UI is designed to be intuitive, ensuring that both novice and experienced users can take advantage of the powerful features it offers without a steep learning curve.
 
 ---
 
