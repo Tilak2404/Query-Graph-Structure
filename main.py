@@ -2913,9 +2913,30 @@ def chat(req: ChatRequest):
         }
 
 
+@app.get("/chat")
+def chat_info():
+    return {
+        "message": "Chat endpoint is available.",
+        "method": "POST",
+        "path": "/api/chat",
+        "body": {"message": "your question", "history": []},
+    }
+
+
 @app.post("/api/chat")
 def chat_api(req: ChatRequest):
-    return chat(req)
+    try:
+        return chat(req)
+    except HTTPException:
+        raise
+    except Exception:
+        logger.exception("Unhandled error while serving /api/chat")
+        raise HTTPException(status_code=500, detail="Chat request failed.")
+
+
+@app.get("/api/chat")
+def chat_api_info():
+    return chat_info()
 
 
 if FRONTEND_DIST.exists():
