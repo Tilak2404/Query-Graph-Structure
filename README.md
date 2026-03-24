@@ -72,7 +72,9 @@ o2c_data.db (SQLite)
 
 ---
 
-## 🔑 Key Design Decisions
+## 🔑 Key Design Decisions<img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/5e1cfb67-1c64-4f95-8ff2-4c5777692b5d" />
+
+
 
 ### 1. SQLite Over Dedicated Graph Databases
 
