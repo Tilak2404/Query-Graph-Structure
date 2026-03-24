@@ -423,13 +423,15 @@ If `frontend/dist` exists, FastAPI serves it directly.
 
 ### Analytics Queries
 
-- "How many sales orders are there?"
+- "How many sales orders are there?" <img width="410" height="490" alt="image" src="https://github.com/user-attachments/assets/a9317bcd-9bcc-45f3-9f20-0db931b6d046" />
+
 - "Which products have the highest number of billing documents?"
 - "Show me the top 10 deliveries by billing amount"
 
 ### Flow Traces
 
-- "Trace the full flow of billing document 90504204"
+- "Trace the full flow of billing document 90504204" <img width="1919" height="1046" alt="image" src="https://github.com/user-attachments/assets/33e0e804-6fc1-48a8-8105-15279773b338" />
+
 - "Trace the full flow of sales order 740509"
 - "Trace the full flow of that billing document" (uses history)
 
@@ -442,7 +444,8 @@ If `frontend/dist` exists, FastAPI serves it directly.
 ### Graph Exploration
 
 - "How many BillingDocument nodes are in the graph?"
-- "Which edge types connect DeliveryItem nodes?"
+- "Which edge types connect DeliveryItem nodes?"<img width="418" height="730" alt="image" src="https://github.com/user-attachments/assets/00fcc2b1-2b96-463a-a0ee-05552ddd4a48" />
+
 - "Show me all customers with more than 10 orders"
 
 ---
