@@ -315,8 +315,8 @@ System restricts questions to the dataset:
 - 
 **Example of guardrail in action:**
 
-![Guardrail Example](<img width="403" height="284" alt="image" src="https://github.com/user-attachments/assets/6309e987-70b0-4c0c-94a7-2148f537e0db" />
-)
+<img width="403" height="284" alt="image" src="https://github.com/user-attachments/assets/6cbf3d81-9422-417e-abc6-8afe36090b81" />
+
 
 This demonstrates how the system rejects out-of-scope queries. When a user asks an unrelated AI question, the system appropriately responds that it's not related to the order-to-cash dataset schema, maintaining focus on domain-specific queries.
 
